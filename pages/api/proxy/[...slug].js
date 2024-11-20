@@ -7,7 +7,7 @@ export const config = {
 }
 
 export default createProxyMiddleware({
-  target: "https://api.openai.com",
+  target: "https://api.groq.com",
   changeOrigin: true,
   pathRewrite: {[`^/api/proxy`]: ''},
 });

@@ -56,7 +56,7 @@ export function getPayload(sentences: string[], targetLang: string, srcLang?: st
     const rands = rand4_n(sentences.length);
     const nodes = sentences_to_nodes(sentences, rands);
     const payload: OpenAIStreamPayload = {
-        model: "gpt-3.5-turbo",
+        model: "gemma2-9b-it",
         messages: [
             {role: "system" as const, content: systemMessage(targetLang, srcLang, promptTemplate) },
             {role: "user" as const, content: nodesToQueryText(nodes)}],

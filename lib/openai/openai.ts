@@ -1,5 +1,5 @@
 export function checkOpenaiApiKey(str: string) {
-    var pattern = /^sk-[A-Za-z0-9]{48}$/;
+    var pattern = /^gsk_[A-Za-z0-9]+$/;
     return pattern.test(str);
   }
   
